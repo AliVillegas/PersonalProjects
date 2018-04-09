@@ -16,7 +16,6 @@ fun main(args: Array<String>) {
     var mutableFullText = eliminateNonTextData(fullText.toMutableList())
     var dataWithTrimmedLineLength = trimLinesToCertainLength(84,mutableFullText)
     //var cleanData = cleanTextFromCommas(dataWithTrimmedLineLength)
-    // writeDataInCSV(fileName,dataWithTrimmedLineLength)
     writeDataInCSV(fileName,mutableFullText)
 
 }
