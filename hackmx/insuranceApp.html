@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Hackmx Insurance</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="headerContainer">
+      <div id="uiMenuIcon">
+         <img src="img/ic_menu_white_48dp_1x.png">
+      </div>
+      <div id="headerTitle">Access</div>
+      <div id="medIcon">
+         <img src="img/insurance_icon.png" width="64px">
+      </div>
+  </div>
+ <div id="hiddenMenu" style="display: none" >
+     <ul id="uiMenuList">
+        <li id="medInHisLi">Medical History</li>
+        <li id="reqAccessLi">Request Access</li>
+        <li id="aboutLi">About</li>
+     </ul>
+ </div>
+
+    <div id="MedHistoryContainer" style="display: none">
+     <div id="patientInfo">
+        <div id="details">
+            <span id="medicalHisTitle">Patient's details</span>
+            <div class="spacer15"></div>
+        <ul>
+            <li> Name: <span id="userNameDetail">Orlando Herrera</span></li>
+            <li> Age: <span id="userAgeDetail">60</span></li>
+            <li> Blood Type: <span id="userBloodDetail">A-</span></li>
+        </ul>
+    </div>
+     </div>
+     <div id="medicalHistory" style="display: block" >
+         <span id="medicalHisTitle">Medical History</span>
+          <input id="users_code3" type="text" placeholder="Filter">
+    <button id="searchHist" type="submit" class="request">Filter</button>
+         <div class="spacer30"></div>
+         <div id="historyMed">
+             <ul>
+            <li class="blockchain">
+                    <ul>
+                        <li>Classification: Study</li>
+                        <li>Description: DNA patternity test</li>
+                        <li>Date: 02/02/2018 </li>
+                        <li>Entity: INMEGEN </li>
+                    </ul></li>
+
+            </ul>
+            <ul>
+                <li class="blockchain">
+                    <ul>
+                        <li>Classification: Diagnosis</li>
+                        <li>Description: Multiple identity syndrome</li>
+                        <li>Date: 06/08/2017 </li>
+                        <li>Entity: Psychiatric Hospital of LA</li>
+                    </ul>
+                </li>
+                <li class="blockchain">
+                    <ul>
+                        <li>Classification: Vaccination</li>
+                        <li>Description: Received triple Type A </li>
+                        <li>Date: 17/03/2018 </li>
+                        <li>Entity: Federal Campaign </li>
+                    </ul></li>
+
+                <li class="blockchain">
+                    <ul>
+                        <li>Classification: study</li>
+                        <li>Description: VIH Exam taken </li>
+                        <li>Date: 11/04/2018 </li>
+                        <li>Entity: ITESM Santa Fe </li>
+                    </ul></li>
+
+            </ul>
+         </div>
+    </div>
+     <div id="historyMedVaccination" style="display: none">
+            <ul>
+                <li class="blockchain">
+                    <ul>
+                        <li>Classification: Vaccination</li>
+                        <li>Description: Received Rubeola Type A </li>
+                        <li>Date: 14/04/2018 </li>
+                        <li>Entity: Federal Campaign </li>
+                    </ul></li>
+
+            </ul>
+         </div>
+ </div>
+    <div id="AccessContainer" style="display: block" >
+        <input id="users_code" type="text" placeholder="User's UPRC">
+        <button id="requestButton" type="submit" class="request">Request Access</button>
+    </div>
+    <div id="AboutContainer" style="display: none" >
+    <div id="aboutText">
+        <p>This prototype web app allows insurance companies to better provide health plans for their clients via Blockchain as medical records.</p>
+     </div>
+ </div>
+  <script src="js/scripts_insur.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#headerContainer{
+    font-family: inherit;
+    width: 100%;
+    background-color: rgb(79,103,200);
+    height: 60px;
+    float: left;
+}
+#hiddenMenu{
+    font-family: inherit;
+    margin: 0 auto;
+    width: 100%;
+    float: left;
+}
+#uiMenuIcon{
+    width: 15%;
+}
+#userIcon{
+    display: block;
+    width: 20%;
+    float: right;
+}
+#medIcon{
+    display: block;
+    width: 20%;
+    float: right;
+}
+#insuranceIcon{
+    display: block;
+    width: 20%;
+    float: right;
+}
+.detail{
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+#headerTitle{
+    width: 60%;
+    margin: 15px auto 0px 100px;
+    font-size: 24px;
+    color: white;
+}
+
+#choosePrivilege{
+    width: 100%;
+    margin: 0 auto;
+}
+.imageThird{
+    width: 33%;
+    float: left;
+}
+
+.imageThird img{
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 90%;
+}
+#uiMenuIcon{
+    padding: 5px;
+    float: left;
+}
+
+#uiMenuList li{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    margin: 40px 0 40px 0;
+    padding: 5px 0 20px 0;
+    font-size: 24px;
+    font-family: inherit;
+    border-bottom: 1px solid rgb(79,103,200);
+}
+
+#MedHistoryContainer{
+}
+
+#historyMed{
+    margin-top: 20px;
+}
+#addBlockToHis{
+    background-color: #4CAF50;
+    border-radius: 100px;
+    width: 300px;
+    color: white;
+    font-size: 18px;
+    margin: 20px auto;
+}
+#addToHis{
+    color: black;
+		padding-top: 100px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#addBlockToHis img{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+#historyMedVaccination{
+    margin-top: 50px;
+}
+#medicalHistory{
+    margin: 15px auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+
+}
+
+#aboutText{
+		padding-top: 100px;
+		font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+#aboutText p{
+	text-align: center;
+	margin: 0 10px;
+}
+
+#AboutContainer{
+    padding-top: 50px;
+}
+#patientInfo{
+	  padding-top: 100px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+#medicalHisTitle{
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    height: 40px;
+}
+.blockchain{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin: 0 auto;
+    font-size: 24px;
+    width: 80%;
+    font-weight: 400;
+    padding: 20px;
+    border: 2px solid rgb(79,103,200);
+}
+.blockchain ul{
+    text-align: left;
+    padding: 2px;
+}
+.blockchain li{
+    margin-bottom: 5px;
+}
+#AccessContainer {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40%;
+}
+
+.request {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    background-color: rgb(79,103,200);
+}
+
+#users_code {
+    text-transform: uppercase;
+}
+
+#users_code2 {
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+#users_code3 {
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+#details ul{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+		padding-top: 40px;
+}
+
+#details li{
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 20px;
+    border: none;
+}
+
+#loginContainer{
+    border: none;
+}
+
+loginContainer form{
+    border: none;
+    margin: 30px;
+}
+loginContainer form input{
+    border: none;
+    padding: 10px;
+}
+form{
+    border: none;
+    margin: 30px;
+}
+
+input{
+    margin: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-family: inherit;
+}
+.spacer60{
+    width: 100%;
+    height: 60px;
+    border: none;
+}
+.spacer30{
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+.spacer15{
+    width: 100%;
+    height: 15px;
+    border: none;
+}
+.container button{
+    background-color:  rgb(79,103,200);
+    font-family: inherit;
+    font-size: 18px;
+}
+.alert {
+    width: 100%;
+    background-color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+
+#PermissionsContainer {
+    width: 80%;
+    margin: 80px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+
+}
+
+#Permission_message ul li {
+    margin-bottom: 10px;
+}
+
+#Permission_message {
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#hospital_request_name {
+    font-weight: 700;
+}
+
+#accept {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#reject {
+    width: 50%;
+    background-color: red;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+}
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Hackmx User</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+ <div id="headerContainer">
+     <div id="uiMenuIcon">
+        <img src="img/ic_menu_white_48dp_1x.png" >
+     </div>
+     <div id="headerTitle"> Medical History</div>
+     <div id="userIcon">
+        <img src="img/user_icon.png" width="64px">
+     </div>
+ </div>
+ <div class="spacer60"></div>
+ <div id="hiddenMenu" style="display: none" >
+     <ul id="uiMenuList">
+        <li id="medHisLi">Medical History</li>
+        <li id="permLi">Permissions</li>
+        <li id="aboutLi">About</li>
+     </ul>
+ </div>
+ <div id="MedHistoryContainer">
+    <div id="details">
+        <ul>
+            <li>Name: <span id="userNameDetail">Bob Newman</span></li>
+            <li>Age: <span id="userAgeDetail">36</span></li>
+            <li>Blood Type: <span id="userBloodDetail">A+</span></li>
+        </ul>
+    </div>
+    <div id="medicalHistory">
+         <span id="medicalHisTitle">Medical History</span>
+         <div id="historyMed">
+            <ul>
+                <li class="blockchain">
+                    <ul>
+                        <li>Classification: Diagnosis</li>
+                        <li>Description: Lung infection </li>
+                        <li>Date: 30/06/2018 </li>
+                        <li>Entity: Hospital General</li>
+                    </ul>
+                </li>
+                <li class="blockchain">
+                    <ul>
+                        <li>Classification: Vaccination</li>
+                        <li>Description: Tetanus type 2 </li>
+                        <li>Date: 07/01/2018 </li>
+                        <li>Entity: Federal Campaign </li>
+                    </ul></li>
+
+            </ul>
+            <ul>
+            <li class="blockchain">
+                    <ul>
+                        <li>Classification: Diagnosis</li>
+                        <li>Description: Severe Head Injury</li>
+                        <li>Date: 11/11/2017 </li>
+                        <li>Entity: Emergencies CDMX</li>
+                    </ul></li>
+
+            </ul>
+         </div>
+    </div>
+ </div>
+ <div id="PermissionsContainer" style="display: none" >
+   <div id="Permission_message">
+        <ul>
+            <li> A new association wants to access your medical history.</li>
+            <li id="hospital_request_name">San Alejo Hospital</li>
+            <li>15/04/2018</li>
+        </ul>
+        <button id="accept">Accept</button>
+        <button id="reject">Reject</button>
+    </div>
+ </div>
+ <div id="AboutContainer" style="display: none" >
+    <div id="aboutText">
+        <p>This prototype web app allows users to view their entire medical history via blockchain technology. Allowing hospitals and insurance companies to easily acces granted information.</p>
+     </div>
+ </div>
+
+  <script src="js/scripts_user.js"></script>
+</body>
+</html>

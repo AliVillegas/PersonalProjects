@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Hackmx Medical</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+ <div id="headerContainer">
+     <div id="uiMenuIcon">
+        <img src="img/ic_menu_white_48dp_1x.png">
+     </div>
+     <div id="headerTitle">Access</div>
+     <div id="medIcon">
+        <img src="img/doctor_icon.png" width="64px">
+     </div>
+ </div>
+ <div id="hiddenMenu" style="display: none" >
+     <ul id="uiMenuList">
+        <li id="medMedHisLi">Medical History</li>
+        <li id="reqAccessLi">Request Access</li>
+        <li id="upHisLi">Update History</li>
+        <li id="reqUnvalidLi">Request Unvalidation</li>
+        <li id="aboutLi">About</li>
+     </ul>
+ </div>
+
+ <div id="MedMedHistoryContainer" style="display: none">
+     <div id="patientInfo">
+        <div id="details">
+            <span id="medicalHisTitle">Patient's details</span>
+            <div class="spacer15"></div>
+        <ul>
+            <li> Name: <span id="userNameDetail">Bryan</span></li>
+            <li> Age: <span id="userAgeDetail">19</span></li>
+            <li> Blood Type: <span id="userBloodDetail">o-</span></li>
+        </ul>
+     </div>
+     </div>
+     <div id="medicalHistory" style="display: block" >
+         <span id="medicalHisTitle">Medical History</span>
+         <input id="users_code3" type="text" placeholder="Filter">
+         <button id="searchHist" type="submit" class="request">Filter</button>
+         <div class="spacer30"></div>
+         <div id="historyMed">
+            <ul>
+                <li class="blockchain">
+                    <ul>
+                        <li>Classification: Diagnosis</li>
+                        <li>Description: Detected signs of type c cancer </li>
+                        <li>Date: 20/06/2018 </li>
+                        <li>Entity: San Alejo Hospital</li>
+                    </ul>
+                </li>
+                <li class="blockchain">
+                    <ul>
+                        <li>Classification: Vaccination</li>
+                        <li>Description: Received Rubeola Type A </li>
+                        <li>Date: 14/04/2018 </li>
+                        <li>Entity: Federal Campaign </li>
+                    </ul></li>
+
+                <li class="blockchain">
+                    <ul>
+                      <li>Classification: Analysis</li>
+                      <li>Description: Sugar and glucose take</li>
+                      <li>Date: 11/03/2018 </li>
+                      <li>Entity: Prim Lab's </li>
+                    </ul></li>
+            </ul>
+         </div>
+    </div>
+     <div id="historyMedVaccination" style="display: none">
+            <ul>
+                <li class="blockchain">
+                    <ul>
+                        <li>Classification: Vaccination</li>
+                        <li>Description: Received Rubeola Type A </li>
+                        <li>Date: 14/04/2018 </li>
+                        <li>Entity: Federal Campaign </li>
+                    </ul></li>
+
+            </ul>
+         </div>
+ </div>
+ <div id="AccessContainer" style="display: block">
+    <input id="users_code" type="text" placeholder="User's UPRC">
+    <button id="accessButton" type="submit" class="request">Request Access</button>
+ </div>
+ <div id="UpdateContainer" style="display: none">
+      <div id="addToHis">Add record to medical History</div>
+     <div id="newRecord">
+        <input id="users_code3" type="text" placeholder="Classification">
+        <input id="users_code3" type="text" placeholder="Description">
+        <input id="users_code3" type="text" placeholder="Date">
+        <input id="users_code3" type="text" placeholder="Entity">
+
+     </div>
+     <div id="addBlockToHis">
+        <img src="img/ic_note_add_white_48dp_1x.png">
+     </div>
+ </div>
+ <div id="RequestUnvalidationContainer" style="display: none">
+    <input id="users_code" type="text" placeholder="Entry ID">
+    <button type="submit" class="request">Request Unvalidation</button>
+ </div>
+ <div id="AboutContainer" style="display: none" >
+    <div id="aboutText">
+        <p>This prototype web app allows hospital to view and update their patient's entire medical history via blockchain technology.</p>
+     </div>
+ </div>
+  <script src="js/scripts_med.js"></script>
+</body>
+</html>
