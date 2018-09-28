@@ -48,7 +48,7 @@ protected void methodName(){
 )
 
 ;5 java public static void Method Creation 
-::.puvoid::
+::.pusvoid::
 (
 public static void methodName(){
 
@@ -56,7 +56,7 @@ public static void methodName(){
 )
 
 ;6 java private static void Method Creation
-::.privoid::
+::.prisvoid::
 (
 private static void methodName(){
 
@@ -64,7 +64,7 @@ private static void methodName(){
 )
 
 ;7 java protected static void Method Creation 
-::.provoid::
+::.prosvoid::
 (
 protected static void methodName(){
 
@@ -592,3 +592,13 @@ private static final String s = "";
 (
 System.out.println();
 )
+
+;80 create constructor 
+::construct%x%::
+(
+public %x%(){
+
+}
+)
+
+^+e::ExitApp
